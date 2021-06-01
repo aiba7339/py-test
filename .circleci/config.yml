@@ -19,4 +19,4 @@ jobs:
       - run:
           command: sudo pip install -r requirements.txt
       - run:
-          command: nosetests tests/test_math.py
+          command: pytest
