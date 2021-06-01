@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build_1:
+  build:
     working_directoyr: ~/python-ci
     docker:
       - image: circleci/python:3.6.4
@@ -10,7 +10,7 @@ jobs:
           command: sudo pip install -r requirements.txt
       - run:
           command: nosetests tests/math-test.py
-  build_2:
+  build_pytest:
     working_directoyr: ~/python-ci
     docker:
       - image: circleci/python:3.6.4
