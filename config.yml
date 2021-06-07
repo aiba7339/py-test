@@ -9,7 +9,7 @@ jobs:
       - run:
           command: sudo pip install -r requirements.txt
       - run:
-          command: nosetests tests/test_math_a.py
+          command: nosetests tests/test_math.py
 
   pytest:
     working_directory: ~/python-ci
