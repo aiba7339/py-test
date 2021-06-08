@@ -31,6 +31,6 @@ workflows:
           requires:
             - nosetest
         filters:
-           branches:
-             only:
-               - develop
+          branches:
+            only:
+              - develop
